@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .header div {
+            flex: 1;
+        }
+        .h1-container {
+            display: flex;
+            align-items: center;
+            gap: 0.2em;
+        }
+        h1 {
+            color: #333;
+            margin: 0 0 10px;
+        }
+         h2 {
+            color: #555;
+            font-size: 18px;
+            margin: 0 0 10px;
+            font-weight: normal;
+        }
+        p {
+            color: #666;
+            margin: 0;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            max-width: 300px;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .linkedin-button {
+            margin-left: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.5em;
+            height: 1.5em;
+            background: #0077B5;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .linkedin-button:hover {
+            background: #005582;
+        }
+        .linkedin-button:hover::after {
+            content: "Laman LinkedIn";
+            position: absolute;
+            background: #333;
+            color: #fff;
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 5px;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+        }
+        .linkedin-text {
+    		font-size: 1em;  /* Ukuran huruf */
+    		font-weight: bold;  /* Menebalkan huruf */
+    		color: white;  /* Warna huruf putih */
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <!-- Photo -->
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFiAk0jMfT8SA/profile-displayphoto-shrink_800_800/B4EZQOABlnHsAc-/0/1735401675841?e=1741219200&v=beta&t=IyVdUOQnvNY8IifAbsMr7xcEEVo4gvYZucB0VH-3Pcg" alt="Foto Profil">
+            <!-- Text -->
+            <div>
+                <div class="h1-container">
+                    <h1>Nama Saya</h1>
+                    <!-- LinkedIn Button -->
+                    <a href="https://www.linkedin.com/in/zanita-m" target="_blank" class="linkedin-button">
+                        <span class="linkedin-text">in</span>
+                    </a>
+                </div>
+                <h2>Gunadarma Student - Aspiring Business Analyst</h2>
+                <p>Telusuri project yang telah saya kerjakan, showcasing skill business problem analysis, data storytelling, dan sentiment prediction. Dibawah ini adalah hasil project dari Studi Independen di MIKTI, Program Kampus Merdeka MSIB 7.</p>
+            </div>
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="buttons">
+            <a href="https://www.canva.com/design/DAGatOpLDsA/5pmP7ruM3V8JT6LjW5SKXg/view?utm_content=DAGatOpLDsA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9b54469033"
+            class="btn" target="_blank">
+            Presentasi</a>
+            <a href="https://public.tableau.com/views/SentimenNewsData/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+            class="btn" target="_blank">
+            Dashboard</a>
+            <a href="https://your-streamlit-link"
+            class="btn" target="_blank">
+            App Prediksi Sentimen</a> <span> WIP </span>
+        </div>
+    </div>
+</body>
+</html>
